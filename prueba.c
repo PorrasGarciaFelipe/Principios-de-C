@@ -2,18 +2,17 @@
 
 int main(){
     
-    int altura, fila, col;
-    printf("Altura de la piramide: ");
-    scanf("%d",&altura);
+    int n, fila, columna;
+    printf("Introdusca la altura: ");
+    scanf("%d",&n);
     
-    for(fila=1; fila<=altura; fila++){
+    for(fila=1; fila<=n; fila++){
         
-        /* Espacios en blanco*/
-        for(col=1; col<=altura-fila; col++){
+        for(columna=1; columna<=n-fila; columna++){
             printf(" ");  
         }
         
-        for(col=1;col<=2*fila-1;col++){  
+        for(columna=1;columna<=2*fila-1;columna++){  
             printf("*");
         }
         printf("\n" ) ;
